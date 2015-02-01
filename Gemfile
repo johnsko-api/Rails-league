@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'json', '~> 1.8.2'
 gem 'dotenv-rails', '~> 1.0.2'
+gem 'trollop', '~> 2.1.1'
+gem 'google-api-client', '~> 0.8.2'
 
 group :development, :test do
   gem 'byebug'
