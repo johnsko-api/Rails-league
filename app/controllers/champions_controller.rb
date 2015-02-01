@@ -1,8 +1,13 @@
 class ChampionsController < ApplicationController
 
 def index
-  binding.pry
-@champions = Champion.data["name"]
+  @champions = Champion.data
+end
+
+def show
+  champ_id = params[:id].to_i
+  clean_data = Champion.data
+  @champ_info = clean_data.find {|f| f["id"] == champ_id}
 end
 
 end

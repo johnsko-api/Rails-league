@@ -1,2 +1,7 @@
-
-<%= @champions %>
+<% @champions.each do |champ| %>
+<%champ_name = champ["name"] %>
+<%champ_id = champ["id"] %>
+<%champ_image = champ["image"]["full"] %>
+    <a href='/champions/<%=champ_id%>'><img src="http://ddragon.leagueoflegends.com/cdn/4.21.5/img/champion/<%=champ_image%>"></a>
+    <h5><%=champ_name%></h5>
+<% end %>
